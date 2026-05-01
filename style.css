@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Bangers&display=swap');
+
+/* 🔤 FUENTE PERSONAL */
+@font-face {
+  font-family: "CyberFont";
+  src: url("./KingJola.ttf") format("truetype");
+}
+
+/* 🌐 BASE */
+body {
+  margin: 0;
+
+  /* 🪟 FONDO 2000s */
+  background-color: #a6d8ff;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-family: "CyberFont", Tahoma, sans-serif;
+  color: #003a75;
+}
+
+/* 🌑 capa suave estilo MSN */
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.25);
+  z-index: -1;
+}
+
+/* 📦 contenedor estilo ventana */
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+
+  background: #eaf3ff;
+  border: 2px solid #7fb2ff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(127,178,255,0.5);
+}
+
+/* ⚡ título MSN */
+h1 {
+  font-family: 'Rubik Glitch', cursive;
+  text-align: center;
+  color: #003a75;
+}
+
+/* ✍️ inputs estilo XP */
+input, textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+
+  background: white;
+  border: 1px solid #7fb2ff;
+  border-radius: 6px;
+
+  font-family: Tahoma;
+  color: #003a75;
+}
+
+/* 🔘 botones XP */
+button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+
+  background: linear-gradient(to bottom, #fff, #cfe6ff);
+  border: 1px solid #4a90e2;
+  border-radius: 6px;
+
+  font-weight: bold;
+  color: #003a75;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #fff, #a9d0ff);
+}
+
+/* 🧾 posts estilo MSN */
+.post {
+  margin-top: 15px;
+  padding: 10px;
+
+  background: white;
+  border-left: 3px solid #7fb2ff;
+
+  font-family: Tahoma;
+  color: #003a75;
+}
+
+/* 📊 meta info */
+.meta {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* 👥 contactos online */
+.contacts {
+  position: fixed;
+  right: 10px;
+  top: 100px;
+  width: 150px;
+
+  background: white;
+  border: 2px solid #7fb2ff;
+  padding: 10px;
+
+  font-family: Tahoma;
+  font-size: 12px;
+}
+
+/* 💬 chat flotante */
+.chatbox {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 220px;
+
+  background: white;
+  border: 2px solid #4a90e2;
+}
+
+.chat-header {
+  background: #4a90e2;
+  color: white;
+  padding: 5px;
+}
+
+.chat-body {
+  height: 120px;
+  overflow: auto;
+  font-size: 12px;
+  padding: 5px;
+}

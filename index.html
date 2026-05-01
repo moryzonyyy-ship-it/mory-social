@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSN Cyber Social</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1> Morys </h1>
+
+    <input id="username" placeholder="Tu nombre..." />
+
+    <div class="post-box">
+      <textarea id="postInput" placeholder="Escribe algo..."></textarea>
+      <button onclick="publicarPost()">Enviar</button>
+    </div>
+
+    <div id="feed"></div>
+
+  </div>
+
+  <!-- 👥 CONTACTOS -->
+  <div class="contacts">
+    <h3>🟢 Online</h3>
+    <div>Neo 🟢</div>
+    <div>Mory 🟢</div>
+    <div>CyberUser 🟡</div>
+  </div>
+
+  <!-- 💬 CHAT -->
+  <div class="chatbox">
+    <div class="chat-header">MSN Chat</div>
+    <div class="chat-body" id="chatBody"></div>
+    <input id="chatInput" placeholder="escribe..." oninput="typing()">
+  </div>
+
+  <!-- 🔔 SONIDO -->
+  <audio id="msgSound" src="mensaje.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
